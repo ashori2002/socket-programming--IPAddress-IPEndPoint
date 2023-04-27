@@ -11,10 +11,16 @@ namespace socket_programming_IPAddress___IPEndPoint
     {
         static void Main(string[] args)
         {
+
             IPAddress testIP = IPAddress.Parse("127.0.0.1");
             int port = 2002;
+
+
             Console.WriteLine($"IPAddress: {testIP}");
+
             IPEndPoint testIPEP =new IPEndPoint(testIP, port);
+
+
             Console.WriteLine($"testIPEP: {testIPEP}");
             Console.WriteLine($"testIPEP.Address: {testIPEP.Address}");
             Console.WriteLine($"testIPEP.Port: {testIPEP.Port}");
